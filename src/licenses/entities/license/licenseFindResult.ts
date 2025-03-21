@@ -47,9 +47,11 @@ import {
 /**
  * Highlight response object.
  */
-export type Highlight = {
-  [key in LicenseFindResultFields]?: string[];
-};
+export type Highlight =
+  | {
+      [key in LicenseFindResultFields]?: string[];
+    }
+  | Record<string, unknown>;
 
 /**
  * Fields that can be present in License response and request data.
