@@ -605,19 +605,8 @@ export class LicensesClient extends AbstractRestfulClient {
       };
     }
 
-    if (postData.keywords) {
-      // Flatten with prefix for each type of keyword (license and offer)
-      rawLicensePayload.keywords = {
-        ...this.createKeywords(postData.keywords, 'license'),
-        ...this.createKeywords(postData.keywords, 'offer'),
-        ...this.createKeywords(
-          postData.keywords,
-          'endCustomerOrganizationUnit',
-        ),
-      };
-    }
-
     if (postData.filters) {
+      console.log('postData', postData);
       // Flatten with prefix for each type of filter (license and offer)
       rawLicensePayload.filters = {
         ...this.createFilters(postData.filters, 'license'),

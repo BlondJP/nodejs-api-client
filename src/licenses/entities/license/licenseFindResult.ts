@@ -64,6 +64,7 @@ export enum LicenseFindResultFields {
   COLUMN_CATEGORY = 'category',
   COLUMN_CLOUD_TYPE = 'cloud_type',
   COLUMN_CONFIGS = 'configs',
+  COLUMN_COUNT = 'count',
   COLUMN_WARNINGS = 'warnings',
   COLUMN_CUSTOMER_NAME = 'customer_name',
   COLUMN_CUSTOMER_REF = 'customer_ref',
@@ -99,6 +100,7 @@ export enum LicenseFindResultFields {
   COLUMN_TRIAL = 'trial',
   COLUMN_TYPE = 'type',
   COLUMN_UOM = 'uom',
+  COLUMN_VALUE = 'value',
   COLUMN_VENDOR_CODE = 'vendor_code',
   COLUMN_VENDOR_NAME = 'vendor_name',
   COLUMN_VENDOR_SUBSCRIPTION_ID = 'vendor_subscription_id',
@@ -260,6 +262,7 @@ export type LicenceFindDataFiltersParameters = {
   [LicenseFindResultFields.COLUMN_BASE_SEAT]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_CATEGORY]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_CLOUD_TYPE]?: FiltersParameters;
+  [LicenseFindResultFields.COLUMN_COUNT]?: number;
   [LicenseFindResultFields.COLUMN_CONFIGS]?: ConfigFindResultDataFiltersParameters;
   [LicenseFindResultFields.COLUMN_WARNINGS]?: WarningFindResultDataFiltersParameters;
   [LicenseFindResultFields.COLUMN_CUSTOMER_NAME]?: FiltersParameters;
@@ -296,6 +299,7 @@ export type LicenceFindDataFiltersParameters = {
   [LicenseFindResultFields.COLUMN_TRIAL]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_TYPE]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_UOM]?: FiltersParameters;
+  [LicenseFindResultFields.COLUMN_VALUE]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_VENDOR_CODE]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_VENDOR_NAME]?: FiltersParameters;
   [LicenseFindResultFields.COLUMN_VENDOR_SUBSCRIPTION_ID]?: FiltersParameters;

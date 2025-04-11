@@ -8,13 +8,11 @@ type FilterFindResultDataIterable = {
 /**
  * Filter data values
  */
-export type FilterFindResultDataValues =
-  | FilterFindResultDataIterable
-  | LicenseFilterAggregationType[];
+export type FilterFindResultDataValues = FilterFindResultDataIterable;
 
 export type LicenseFilterAggregationType = {
   count: number;
-  values: string[];
+  value: string;
 };
 
 /**
